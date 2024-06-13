@@ -1,0 +1,11 @@
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\bin\WCFServiceWebRole1.dll.config
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\bin\WCFServiceWebRole1.dll
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\bin\WCFServiceWebRole1.pdb
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\bin\MonAgentListener.dll
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\obj\Release\WCFServiceWebRole1.csproj.AssemblyReference.cache
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\obj\Release\WCFServiceWebRole1.csproj.CoreCompileInputs.cache
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\obj\Release\WCFServi.195B6C05.Up2Date
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\obj\Release\WCFServiceWebRole1.dll
+C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\WCFServiceWebRole1\obj\Release\WCFServiceWebRole1.pdb

@@ -1,0 +1,36 @@
+Azure 2 (emulator)
+
+Proszê napisaæ i uruchomiæ w emulatorze
+Azure serwis WCF z metodami:
+ - Koduj(string nazwa, string tresc)		10%
+   - tworzy bloba o nazwie nazwa i treœci tresc
+     i informuje workera, poprzez kolejkê,
+     o nowym blobie do zakodowania
+ - worker					40%
+   w nieskoñczonoœæ:
+   - odbiera informacje od metody Koduj
+     (poprzez kolejkê)
+   - koduje bloby algorytmem ROT13
+     - kodowanie z prawdopodobieñstwem 1/3
+       rzuca wyj¹tek, którego worker nie ³apie
+     - w przypadku wyj¹tku worker próbuje
+       ponowiæ kodowanie
+   - zakodowane bloby zapisuje w drugim kontenerze
+ - string Pobierz(string nazwa)			10%
+   pobiera treœæ zakodowanego bloba o nazwie nazwa
+   z drugiego kontenera
+ - kolejka					20%
+ - bloby					10%
+ - bloby kodowane				10%
+
+ROT13 nale¿y zaimplementowaæ samodzielnie.
+https://pl.wikipedia.org/wiki/ROT13
+Polskie znaki mo¿na zignorowaæ.
+
+Uwagi:
+Po zakoñczeniu zadania proszê przes³aæ wszystkie pliki kodu, konfiguracyjne (.cs, .config)
+oraz pliki wszytkich projektów i solution (pliki .csproj i .sln).
+Podstaw¹ oceny s¹ równie¿ screeny z dzia³aj¹cych programów.
+Proszê opró¿niæ foldery Debug i Release zostawiaj¹c jedynie pliki .exe i .dll.
+Proszê równie¿ usun¹æ folder packages oraz ukryty folder .vs.
+Pliki nale¿y spakowaæ do archiwum ZIP i wys³aæ na platformie e-nauczanie.

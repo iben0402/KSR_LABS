@@ -1,0 +1,52 @@
+ZADANIE 1
+
+docker run -d --name rabbit -p 5672:5672 -p 15672:15672 rabbitmq:management
+
+ZADANIE 2
+
+docker run -it --name notificationservice -p 92:80 mcr.microsoft.com/dotnet/sdk:8.0
+
+w drugiej konsoli:
+
+docker cp Library.NotificationService2 notificationservice:/app
+
+w pierwszej konsoli:
+
+cd app/
+dotnet restore
+dotnet publish -c Release -o out
+cd out/
+dotnet Library.NotificationService2.dll
+
+w drugiej:
+
+docker commit notificationservice notificationserviceimg
+docker stop notificationservice
+docker rm notificationservice
+
+ZADANIE 3:
+
+w drugiej konsoli:
+
+docker run -it --name notificationservice -p 92:80 notificationserviceimg
+cd app/out/
+dotnet Library.NotificationService2.dll
+
+w trzeciej konsoli:
+
+docker network create my-network
+docker network connect my-network rabbit
+docker network connect my-network notificationservice
+
+ZADANIE 4:
+
+docker build -t webapiimg .
+docker run -it --name webapi -p 91:80 webapiimg
+
+w 1 konsoli:
+
+docker network connect my-network webapi
+
+
+
+docker exec -it notificationservice /bin/bash

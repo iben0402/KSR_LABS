@@ -1,0 +1,17 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] DiagnosticsStoreRootPath set to: C:\Users\iwona\AppData\Local\dftmp\Resources\197cda2d-155a-4aa2-8635-4afb9121e718
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Loading config file: C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Config file to read: C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:20] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:21] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:21] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:21] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:21] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:38:21] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:39:32] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [06.06.2024 13:39:32] DiagnosticPlugin exited with code 0

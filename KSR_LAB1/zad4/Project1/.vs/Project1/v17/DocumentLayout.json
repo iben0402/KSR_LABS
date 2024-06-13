@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iwona\\COMLab1\\zad4\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A20BBE5-3833-4C5B-BE1C-C2DAE36EA6F6}|Project1\\Project1.vcxproj|C:\\Users\\iwona\\COMLab1\\zad4\\Project1\\Project1\\unrej64_3.reg||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{8A20BBE5-3833-4C5B-BE1C-C2DAE36EA6F6}|Project1\\Project1.vcxproj|solutionrelative:Project1\\unrej64_3.reg||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 772,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "unrej64_3.reg",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\zad4\\Project1\\Project1\\unrej64_3.reg",
+              "RelativeDocumentMoniker": "Project1\\unrej64_3.reg",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\zad4\\Project1\\Project1\\unrej64_3.reg",
+              "RelativeToolTip": "Project1\\unrej64_3.reg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002531|",
+              "WhenOpened": "2024-03-14T08:55:07.77Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+C:\Users\iwona\KSR LABY\KSR_LAB13\LibrarySystem\Library.Web\bin\Release\net8.0\publish\Library.Web.exe
+C:\Users\iwona\KSR LABY\KSR_LAB13\LibrarySystem\Library.Web\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\iwona\KSR LABY\KSR_LAB13\LibrarySystem\Library.Web\bin\Release\net8.0\publish\appsettings.json
+C:\Users\iwona\KSR LABY\KSR_LAB13\LibrarySystem\Library.Web\bin\Release\net8.0\publish\Library.Web.dll
+C:\Users\iwona\KSR LABY\KSR_LAB13\LibrarySystem\Library.Web\bin\Release\net8.0\publish\Library.Web.deps.json
+C:\Users\iwona\KSR LABY\KSR_LAB13\LibrarySystem\Library.Web\bin\Release\net8.0\publish\Library.Web.runtimeconfig.json
+C:\Users\iwona\KSR LABY\KSR_LAB13\LibrarySystem\Library.Web\bin\Release\net8.0\publish\Library.Web.pdb

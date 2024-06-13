@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iwona\\KSR LABY\\KSR_LAB14\\LibrarySystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE8C950-4882-45EB-AE30-08CBB7FB59EF}|Library.WebApi\\Library.WebApi.csproj|c:\\users\\iwona\\ksr laby\\ksr_lab14\\librarysystem\\library.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AEE8C950-4882-45EB-AE30-08CBB7FB59EF}|Library.WebApi\\Library.WebApi.csproj|solutionrelative:library.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D313D66B-6653-4BAD-954E-039D6A4FFE44}|Library.Web\\Library.Web.csproj|c:\\users\\iwona\\ksr laby\\ksr_lab14\\librarysystem\\library.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D313D66B-6653-4BAD-954E-039D6A4FFE44}|Library.Web\\Library.Web.csproj|solutionrelative:library.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5F5441-6517-41E5-A086-2C7D7F23C64D}|Library.NotificationService2\\Library.NotificationService2.csproj|c:\\users\\iwona\\ksr laby\\ksr_lab14\\librarysystem\\library.notificationservice2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C5F5441-6517-41E5-A086-2C7D7F23C64D}|Library.NotificationService2\\Library.NotificationService2.csproj|solutionrelative:library.notificationservice2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\iwona\\KSR LABY\\KSR_LAB14\\LibrarySystem\\Library.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Library.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\iwona\\KSR LABY\\KSR_LAB14\\LibrarySystem\\Library.Web\\appsettings.json",
+              "RelativeToolTip": "Library.Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T16:34:55.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\iwona\\KSR LABY\\KSR_LAB14\\LibrarySystem\\Library.NotificationService2\\appsettings.json",
+              "RelativeDocumentMoniker": "Library.NotificationService2\\appsettings.json",
+              "ToolTip": "C:\\Users\\iwona\\KSR LABY\\KSR_LAB14\\LibrarySystem\\Library.NotificationService2\\appsettings.json",
+              "RelativeToolTip": "Library.NotificationService2\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T13:15:19.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\iwona\\KSR LABY\\KSR_LAB14\\LibrarySystem\\Library.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "Library.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\iwona\\KSR LABY\\KSR_LAB14\\LibrarySystem\\Library.WebApi\\appsettings.json",
+              "RelativeToolTip": "Library.WebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T13:08:03.694Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

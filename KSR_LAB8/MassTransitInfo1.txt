@@ -1,0 +1,46 @@
+Programy powinny wykorzystywaæ w³asny deweloperski
+serwer za³o¿ony wczesniej na https://www.cloudamqp.com/
+Ka¿dy proces powinien na pocz¹tku siê
+przedstawiæ, czyli wypisaæ na konsolê kim
+jest, np. "nadawca", "odbiorca 2" itp.
+W celu poprawienia czytelnoœci, aby odró¿niæ
+komendu wypisywane przez program a treœæ
+odebranych/wys³anych wiadomoœci, mo¿na u¿yæ
+klasy ConsoleCol (dostêpna na eNauczanie).
+Utworzenie szyny korzystaj¹cej z RabbitMq:
+
+var bus = Bus.Factory.CreateUsingRabbitMq(sbc => {
+    var host = sbc.Host(new Uri("rabbitmq://<host>/<virtual host>"), 
+        h => { h.Username("login");
+            h.Password("password"); });
+
+});
+
+1. wydawca (W)				20%
+publikuje 10 wiadomoœci ze zmieniaj¹c¹ siê treœci¹
+
+2. odbiorca (A)				15%
+wypisuje na konsolê treœæ odebranych wiadomoœci
+
+3. nag³ówki				10%
+ustawienie w nadawcy i wypisanie w odbiorcy dwóch ró¿nych nag³ówków (w ka¿dej wiadomoœci)
+
+4. odbiorca (B) 				15%
+wypisuje na konsolê treœæ odebranych wiadomoœci; wyœwietla tak¿e liczbê odebranych wiadomoœci (licznik powinien
+byæ polem klasy obs³uguj¹cej komunikaty i nie mo¿e byæ statyczny)
+
+5. odbiorca (C) i drugi typ wiadomoœci	20%
+wydawca publikuje dodatkowo wiadomoœci drugiego typu; odbiorca C wyœwietla ich treœæ na konsolê; wiadomoœci s¹ interfejsami
+
+6. wersjonowanie			20%
+wydawca publikuje trzy typy wiadomoœci; trzeci typ dziedziczy po pierwszych
+dwóch (z pkt. 1 i 5.); wiadomoœci te odbiera odbiorca B
+
+Uwagi:
+Po zakoñczeniu zadania proszê przes³aæ wszystkie pliki kodu, konfiguracyjne (.cs, .config)
+oraz pliki wszytkich projektów i solution (pliki .csproj i .sln).
+Proszê równie¿ do³¹czyæ skompilowane pliki: exe oraz dll.
+Podstaw¹ oceny s¹ równie¿ screeny z dzia³aj¹cych programów.
+Proszê opró¿niæ foldery Debug i Release zostawiaj¹c jedynie pliki .exe i .dll.
+Proszê równie¿ usun¹æ folder packages oraz ukryty folder .vs.
+Pliki nale¿y spakowaæ do archiwum ZIP i wys³aæ na platformie e-nauczanie.

@@ -1,0 +1,19 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] DiagnosticsStoreRootPath set to: C:\Users\iwona\AppData\Local\dftmp\Resources\0f2a5cfa-ed21-40af-a74c-6e1694f0f810
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Loading config file: C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Config file to read: C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:57] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:58] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:58] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:19:58] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:21:08] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 13:21:08] DiagnosticPlugin exited with code 0

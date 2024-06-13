@@ -1,0 +1,99 @@
+Programy powinny wykorzystywaæ w³asny deweloperski
+serwer za³o¿ony wczesniej na https://www.cloudamqp.com/
+Ka¿dy proces powinien na pocz¹tku siê
+przedstawiæ, czyli wypisaæ na konsolê kim
+jest, np. "nadawca", "odbiorca 2" itp.
+W celu poprawienia czytelnoœci, aby odró¿niæ
+komendu wypisywane przez program a treœæ
+odebranych/wys³anych wiadomoœci, mo¿na u¿yæ
+klasy ConsoleCol (dostêpna na eNauczanie).
+Utworzenie szyny korzystaj¹cej z RabbitMq:
+
+var bus = Bus.Factory.CreateUsingRabbitMq(sbc => {
+    var host = sbc.Host(new Uri("rabbitmq://<host>/<virtual host>"), 
+        h => { h.Username("login");
+            h.Password("password"); });
+
+});
+
+procesy:
+ - sklep
+ - klient A
+ - klient B
+ - magazyn
+
+wiadomoœci (mo¿na dodawaæ dodatkowe pola):
+ - StartZamówienia { int ilosc; } 	klient -> sklep
+ - PytanieoPotwierdzenie { int ilosc; }	sklep -> klient
+ - Potwierdzenie			klient -> sklep
+ - BrakPotwierdzenia			klient -> sklep
+ - PytanieoWolne { int ilosc; }		sklep -> magazyn
+ - OdpowiedzWolne			magazyn -> sklep
+ - OdpowiedzWolneNegatywna		magazyn -> sklep
+ - AkceptacjaZamówienia { int ilosc; }	sklep -> klient
+ - OdrzucenieZamówienia { int ilosc; }	sklep -> klient
+
+proces sklep 						(40% + 10%(timeout))
+ - przechowuje i przetwarza sagi opisuj¹ce proces zamówienia
+ - wysy³a do magazynu pytanie o potwierdzenie zamówienia (wraz z iloœci¹)
+ - wysy³a do klienta pytanie o potwierdzenie zamówienia (wraz z iloœci¹)
+ - odbiera potwierdzenia od magazynu
+ - odbiera potwierdzenia od klienta
+ - kolejnoœæ odbierania potwierdzen nie powinna mieæ znaczenia
+ - je¿eli oboje potwierdz¹ transakcja konczy siê sukcesem
+   i wysy³ane jest do klienta potwierdzenie; w przeciwnym wypadku
+   wysy³any jest do klienta brak potwierdzenia
+ - timeout: zamówienie niepotwierdzone w przeci¹gu 10 sekund jest anulowane
+
+procesy klient A i klient B					(20%)
+ - wysy³a zamówienie, zamówienie zawiera iloœæ
+   (liczba pobierana z klawiatury),
+ - odbiera pytania o potwierdzenia od sklepu i potwierdza lub nie
+   (brak potwierdzenia te¿ jest sygnalizowany wiadomoœci¹)
+   w zale¿noœci od naciœniêtego klawisza
+ - odbiera wiadomoœci potwierdzaj¹ce (lub niepotwierdzaj¹ce)
+   zakup od sklepu
+
+proces magazyn							(30%):
+ - przechowuje stan magazynu (liczba ca³kowita, pocz¹tkowo 0);
+   stan dzieli siê na jednostki wolne i zarezerwowane
+ - wyœwietla na konsoli stan magazynu (wolne i zarezerwowane osobno)
+ - wpisanie liczby zwiêksza stan magazynu (wolne) o podan¹ wartoœæ
+ - odbiera pytania o potwierdzenia od sklepu i potwierdza lub nie
+   (brak potwierdzenia te¿ jest sygnalizowany wiadomoœci¹);
+   odpowiedŸ jest twierdz¹ca, je¿eli liczba wolnych jednostek jest
+   co najmniej taka jak iloœæ w zamówieniu; w przeciwnym wypadku
+   odpowiedŸ jest negatywna;
+   potwierdzenie pytania rezerwuje iloœæ jednostek
+   (przenosi je z wolnych na zarezerwowane)
+ - akceptacja zamówienia usuwa zarezerwowane jednostki
+ - odrzucenie zamówienia przenosi zarezerwowane jednostki do wolnych
+
+
+                              magazyn
+                                 A
+                                 |
+                                 | POTW?->TAK/NIE
+klient1 -------------            |
+A A A                \           V        1 lub 2 niepotwierdzone
+| | |                 -------> sklep -----------------------------+
+| | |                /           A \                              |
+| | |   klient2 -----            |  \  2 potwierdzenia            |
+| | |   A A A                    |   --------------------+        |
+| | |   | | |                    |                       |        |
+| | |   | | |   POTW?->TAK/NIE   |                       |        |
+| | +---+-+-+--------------------+                       |        |
+| |     | |                               SUKCES         |        |
+| +-----+-+----------------------------------------------+        |
+|       |                                                         |
+|       |                               PORA¯KA                   |
++-------+---------------------------------------------------------+
+
+Uwagi:
+Po zakoñczeniu zadania proszê przes³aæ wszystkie pliki kodu, konfiguracyjne (.cs, .config)
+oraz pliki wszytkich projektów i solution (pliki .csproj i .sln).
+Proszê równie¿ do³¹czyæ skompilowane pliki: exe oraz dll.
+Podstaw¹ oceny s¹ równie¿ screeny z dzia³aj¹cych programów.
+Proszê opró¿niæ foldery Debug i Release zostawiaj¹c jedynie pliki .exe i .dll.
+Proszê równie¿ usun¹æ folder packages oraz ukryty folder .vs.
+Pliki nale¿y spakowaæ do archiwum ZIP i wys³aæ na platformie e-nauczanie.

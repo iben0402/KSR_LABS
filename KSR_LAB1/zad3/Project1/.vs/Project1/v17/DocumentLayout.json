@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{992B0FF2-BBF5-469A-A331-6FEA9EE11767}|Project1\\Project1.vcxproj|C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\klient2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{992B0FF2-BBF5-469A-A331-6FEA9EE11767}|Project1\\Project1.vcxproj|solutionrelative:Project1\\klient2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{992B0FF2-BBF5-469A-A331-6FEA9EE11767}|Project1\\Project1.vcxproj|C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\guid2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{992B0FF2-BBF5-469A-A331-6FEA9EE11767}|Project1\\Project1.vcxproj|solutionrelative:Project1\\guid2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{992B0FF2-BBF5-469A-A331-6FEA9EE11767}|Project1\\Project1.vcxproj|C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\IKlasa2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{992B0FF2-BBF5-469A-A331-6FEA9EE11767}|Project1\\Project1.vcxproj|solutionrelative:Project1\\IKlasa2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 594,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "klient2.cpp",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\klient2.cpp",
+              "RelativeDocumentMoniker": "Project1\\klient2.cpp",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\klient2.cpp",
+              "RelativeToolTip": "Project1\\klient2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-14T08:09:49.732Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 451,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IKlasa2.h",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\IKlasa2.h",
+              "RelativeDocumentMoniker": "Project1\\IKlasa2.h",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\IKlasa2.h",
+              "RelativeToolTip": "Project1\\IKlasa2.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-14T08:08:28.152Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 280,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "guid2.cpp",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\guid2.cpp",
+              "RelativeDocumentMoniker": "Project1\\guid2.cpp",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\zad3\\Project1\\Project1\\guid2.cpp",
+              "RelativeToolTip": "Project1\\guid2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-14T08:09:49.155Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

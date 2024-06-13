@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iwona\\COMLab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iwona\\COMLab1\\1\\unrej64.reg||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1\\unrej64.reg||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iwona\\COMLab1\\1\\rej64.reg||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1\\rej64.reg||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iwona\\COMLab1\\2\\guid.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2\\guid.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iwona\\COMLab1\\2\\IKlasa.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2\\IKlasa.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iwona\\COMLab1\\2\\klient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2\\klient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "unrej64.reg",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\1\\unrej64.reg",
+              "RelativeDocumentMoniker": "1\\unrej64.reg",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\1\\unrej64.reg",
+              "RelativeToolTip": "1\\unrej64.reg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002531|",
+              "WhenOpened": "2024-03-14T08:03:53.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "klient.cpp",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\2\\klient.cpp",
+              "RelativeDocumentMoniker": "2\\klient.cpp",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\2\\klient.cpp",
+              "RelativeToolTip": "2\\klient.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-14T07:39:58.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IKlasa.h",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\2\\IKlasa.h",
+              "RelativeDocumentMoniker": "2\\IKlasa.h",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\2\\IKlasa.h",
+              "RelativeToolTip": "2\\IKlasa.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-14T07:39:57.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "guid.cpp",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\2\\guid.cpp",
+              "RelativeDocumentMoniker": "2\\guid.cpp",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\2\\guid.cpp",
+              "RelativeToolTip": "2\\guid.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-14T07:39:56.056Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "rej64.reg",
+              "DocumentMoniker": "C:\\Users\\iwona\\COMLab1\\1\\rej64.reg",
+              "RelativeDocumentMoniker": "1\\rej64.reg",
+              "ToolTip": "C:\\Users\\iwona\\COMLab1\\1\\rej64.reg",
+              "RelativeToolTip": "1\\rej64.reg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002531|",
+              "WhenOpened": "2024-03-14T08:03:51.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

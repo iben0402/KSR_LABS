@@ -1,0 +1,126 @@
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:17:25] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:17:25] System.Runtime.InteropServices.COMException (0x80040154): Pobranie fabryki klasy COM dla składnika o identyfikatorze CLSID {2B72133B-3F5B-4602-8952-803546CE3344} nie powiodło się z powodu następującego błędu: 80040154 Klasa niezarejestrowana. (Wyjątek od HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+   w System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
+   w System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
+   w System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
+   w System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   w System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   w System.Activator.CreateInstance[T]()
+   w Microsoft.Web.Administration.ConfigurationManager.CreateAdminManager[TClass,TInterface](WebConfigurationMap webConfigMap, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.CreateWritableAdminManager(WebConfigurationMap webConfigMap, String configPathToEdit, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.CreateConfiguration(WebConfigurationMap configMap, String configPathToEdit, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.GetConfiguration(String rawConfigurationPath, String cacheKey, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.GetApplicationHostConfiguration()
+   w Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   w Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   w Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   w Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   w Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] DiagnosticsStoreRootPath set to: C:\Users\iwona\AppData\Local\dftmp\Resources\6109adda-64e6-45b0-82a8-99458cd7b1f1
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Loading config file: C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Config file to read: C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB11\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <WadCfg>
+    <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
+      <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
+      <Logs scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Error" />
+      <Directories scheduledTransferPeriod="PT1M">
+        <IISLogs containerName="wad-iis-logfiles" />
+        <FailedRequestLogs containerName="wad-failedrequestlogs" />
+      </Directories>
+      <WindowsEventLog scheduledTransferPeriod="PT1M">
+        <DataSource name="Application!*[System[(Level=1 or Level=2 or Level=3)]]" />
+        <DataSource name="Windows Azure!*[System[(Level=1 or Level=2 or Level=3 or Level=4)]]" />
+      </WindowsEventLog>
+      <CrashDumps containerName="wad-crashdumps" dumpType="Mini">
+        <CrashDumpConfiguration processName="WaIISHost.exe" />
+        <CrashDumpConfiguration processName="WaWorkerHost.exe" />
+        <CrashDumpConfiguration processName="w3wp.exe" />
+      </CrashDumps>
+      <PerformanceCounters scheduledTransferPeriod="PT1M">
+        <PerformanceCounterConfiguration counterSpecifier="\Memory\Available MBytes" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\ISAPI Extension Requests/sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\Bytes Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Errors Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Queued" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Rejected" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT3M" />
+      </PerformanceCounters>
+    </DiagnosticMonitorConfiguration>
+  </WadCfg>
+  <StorageAccount>devstoreaccount1</StorageAccount>
+</PublicConfig>
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Checking if configuration needs to be fetched from the storage account and doing so if needed.
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Successfully created checkpoint file C:\Users\iwona\AppData\Local\dftmp\Resources\6109adda-64e6-45b0-82a8-99458cd7b1f1\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Will use local resource directory C:\Users\iwona\AppData\Local\dftmp\Resources\6109adda-64e6-45b0-82a8-99458cd7b1f1\WAD0105
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:25] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:26] Exception in creating the ServerManager; is IIS installed?
+ Error:System.Runtime.InteropServices.COMException (0x80040154): Pobranie fabryki klasy COM dla składnika o identyfikatorze CLSID {2B72133B-3F5B-4602-8952-803546CE3344} nie powiodło się z powodu następującego błędu: 80040154 Klasa niezarejestrowana. (Wyjątek od HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+   w System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
+   w System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
+   w System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
+   w System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   w System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   w System.Activator.CreateInstance[T]()
+   w Microsoft.Web.Administration.ConfigurationManager.CreateAdminManager[TClass,TInterface](WebConfigurationMap webConfigMap, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.CreateWritableAdminManager(WebConfigurationMap webConfigMap, String configPathToEdit, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.CreateConfiguration(WebConfigurationMap configMap, String configPathToEdit, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.GetConfiguration(String rawConfigurationPath, String cacheKey, Boolean isAdminConfig, Boolean isRedirectionConfig)
+   w Microsoft.Web.Administration.ConfigurationManager.GetApplicationHostConfiguration()
+   w Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   w Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   w Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   w Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   w Microsoft.Azure.Plugins.Plugin.WadConfigProcessor.AddDirectories(EventsType mdsEvents, Directories wadDirectories)
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:26] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:26] Checking to see if Application Insights extension needs to be configured.
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:17:27] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\iwona\AppData\Local\dftmp\Resources\6109adda-64e6-45b0-82a8-99458cd7b1f1\WAD0105"  -ConfigFile "C:\Users\iwona\AppData\Local\dftmp\Resources\6109adda-64e6-45b0-82a8-99458cd7b1f1\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-d9a7d835d72d4a45bbc1739a6e706e4d  -TotalShutDownEvent WADDM-TotalShutDown-d9a7d835d72d4a45bbc1739a6e706e4d -InitializedEvent WADM-StartUp-d9a7d835d72d4a45bbc1739a6e706e4d -parent 66596 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:17:57] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:18:27] MonAgentHost.exe started
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:18:27] DiagnoticsPlugin started.
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:18:27] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:18:27] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:18:57] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Information: 0 : [05.06.2024 19:19:25] Failed to update IIS Directory state in directory monitor
+Pobranie fabryki klasy COM dla składnika o identyfikatorze CLSID {2B72133B-3F5B-4602-8952-803546CE3344} nie powiodło się z powodu następującego błędu: 80040154 Klasa niezarejestrowana. (Wyjątek od HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:19:27] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:19:57] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:20:27] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:20:57] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [05.06.2024 19:21:27] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   w Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   w ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   w Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)

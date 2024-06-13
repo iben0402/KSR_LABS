@@ -1,0 +1,15 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] DiagnosticsStoreRootPath set to: C:\Users\iwona\AppData\Local\dftmp\Resources\82db41cf-26aa-4231-b25f-ab8c2589a9b8
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Loading config file: C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Config file to read: C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Emulator config file set to C:\Users\iwona\KSR LABY\KSR_LAB12\AzureCloudService1\AzureCloudService1\csx\Release\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [13.06.2024 07:01:39] Resetting DiagnosticPlugin

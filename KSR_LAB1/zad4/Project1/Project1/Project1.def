@@ -1,0 +1,7 @@
+LIBRARY Projet1.dll
+
+EXPORTS
+	DllCanUnloadNow	PRIVATE
+	DllGetClassObject PRIVATE  
+
+

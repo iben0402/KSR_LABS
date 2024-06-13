@@ -1,0 +1,21 @@
+﻿  dllmain.cpp
+  fabryka3.cpp
+C:\Users\iwona\COMLab1\zad4\Project1\Project1\klasa3.h(10,36): error C2555: "Klasa3::Test" : przesłanianie typu zwracanego funkcji wirtualnej różni się i nie jest kowariantne z "IKlasa3::Test"
+  (kompilowanie pliku źródłowego „dllmain.cpp”)
+  C:\Users\iwona\COMLab1\zad4\Project1\Project1\Iklasa3.h(8,32):
+  zobacz deklarację „IKlasa3::Test”
+  
+C:\Users\iwona\COMLab1\zad4\Project1\Project1\klasa3.h(10,36): error C2555: "Klasa3::Test" : przesłanianie typu zwracanego funkcji wirtualnej różni się i nie jest kowariantne z "IKlasa3::Test"
+  (kompilowanie pliku źródłowego „fabryka3.cpp”)
+  C:\Users\iwona\COMLab1\zad4\Project1\Project1\Iklasa3.h(8,32):
+  zobacz deklarację „IKlasa3::Test”
+  
+  guid3.cpp
+  klasa3.cpp
+C:\Users\iwona\COMLab1\zad4\Project1\Project1\klasa3.h(10,36): error C2555: "Klasa3::Test" : przesłanianie typu zwracanego funkcji wirtualnej różni się i nie jest kowariantne z "IKlasa3::Test"
+  (kompilowanie pliku źródłowego „klasa3.cpp”)
+  C:\Users\iwona\COMLab1\zad4\Project1\Project1\Iklasa3.h(8,32):
+  zobacz deklarację „IKlasa3::Test”
+  
+C:\Users\iwona\COMLab1\zad4\Project1\Project1\klasa3.cpp(41,2): error C3861: "printf": identyfikatora nie odnaleziono
+  Generowanie kodu...
